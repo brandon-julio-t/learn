@@ -1,0 +1,6 @@
+<p *ngFor="let item of items; let i = index">
+  <span *ngIf="i % 2 === 0">{{ i }}. {{ item.name }} - {{ item.price }}</span>
+</p>
+
+<h1>Hello, {{ name }}</h1>
+<input type="text" [(ngModel)]="name">
